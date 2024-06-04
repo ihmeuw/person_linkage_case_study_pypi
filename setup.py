@@ -77,7 +77,6 @@ if __name__ == "__main__":
                 "*.txt",
             ], 
         },
-        #exclude_package_data={"person_linkage_case_study": ["src", "build"]},
         install_requires=install_requirements,
         extras_require={
             "dask": dask_requirements,
