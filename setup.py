@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     with open(os.path.join(base_dir, "README.md")) as f:
         long_description = f.read()
-    
+
     setup_requires = ["setuptools_scm"]
 
     install_requirements = [
@@ -56,12 +56,9 @@ if __name__ == "__main__":
         author_email="zmbc@uw.edu",
         package_dir={
             "person_linkage_case_study": "person_linkage_case_study",
-            "person_linkage_case_study_utils": "person_linkage_case_study/src/person_linkage_case_study_utils"
+            "person_linkage_case_study_utils": "person_linkage_case_study/src/person_linkage_case_study_utils",
         },
-        packages=[
-            "person_linkage_case_study",
-            "person_linkage_case_study_utils"
-        ],
+        packages=["person_linkage_case_study", "person_linkage_case_study_utils"],
         package_data={
             "person_linkage_case_study": [
                 "benchmarks/**/*",
@@ -75,7 +72,7 @@ if __name__ == "__main__":
                 "README.md",
                 "Snakefile",
                 "*.txt",
-            ], 
+            ],
         },
         install_requires=install_requirements,
         extras_require={
