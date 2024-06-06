@@ -52,6 +52,7 @@ if __name__ == "__main__":
         name="person_linkage_case_study",
         description="Person linkage case study for PyPI.",
         long_description=long_description,
+        long_description_content_type='text/markdown',
         license="BSD-3-Clause",
         url="https://github.com/ihmeuw/person_linkage_case_study",
         author="IHME Simulation Science Team",
