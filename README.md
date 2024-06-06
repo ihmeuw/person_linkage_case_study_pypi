@@ -35,3 +35,26 @@ To test that things are set up correctly, try running:
 ```console
 $ snakemake --forceall
 ```
+
+## Installing extras
+
+You can install dependencies for using Spark and Dask by installing with those extras:
+
+```console
+$ pip install person_linkage_case_study[spark,dask]
+```
+
+## Spark without Singularity
+
+The case study typically runs Spark in a Singularity container. If you cannot use Singularity,
+edit the file at `person_linkage_case_study/profiles/default/config.yaml` to say
+`use-singularity: false`.
+As mentioned above, this will rely on Spark **3.4** being installed on your system.
+Specifically, it must be installed at `/opt/spark`.
+
+## What's next?
+
+For further instructions, see the README.md bundled within the package (at the top level
+of your working directory as described previously).
+Aside from how to use Spark, and installing with `pip install person_linkage_case_study`
+instead of `pip install -e .`, all the instructions in that README apply to a PyPI installation.
