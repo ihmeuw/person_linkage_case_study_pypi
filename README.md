@@ -48,7 +48,7 @@ $ pip install person_linkage_case_study[spark,dask]
 
 The case study typically runs Spark in a Singularity container. If you cannot use Singularity,
 edit the file at `person_linkage_case_study/profiles/default/config.yaml` to say
-`use-singularity: false`.
+`use-singularity: false` instead of `use-singularity: true`.
 As mentioned above, this will rely on Spark **3.4** being installed on your system.
 Specifically, it must be installed at `/opt/spark`.
 
