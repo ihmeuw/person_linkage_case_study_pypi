@@ -27,7 +27,7 @@ jobs:
       - name: Publish
         uses: pypa/gh-action-pypi-publish@release/v1
       - name: Send mail
-        # Notify when cron job fails
+        # Notify when scheduled run fails
         if: failure()
         uses: dawidd6/action-send-mail@v2
         with:
